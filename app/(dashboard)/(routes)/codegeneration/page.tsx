@@ -1,7 +1,19 @@
+import { Heading } from "@/components/heading";
+import { CodeIcon} from "lucide-react";
+
+
 const CodeGeneration = ()=>{
     return(
         <div>
-            <h1 className="text-center">Code Generation</h1>
+           <Heading 
+          title="Code Generation"
+          description="Most advanced Code Model"
+          icon={CodeIcon}
+          iconColor='text-emerald-500'
+          bgColor="bg-emerald-500/10"
+          
+          
+          />
         </div>
     )
 }
