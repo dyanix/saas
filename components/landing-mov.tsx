@@ -1,48 +1,79 @@
-// const Mov=()=>{
-//     return(
-//        <div>
-        
-//        </div>
-//     )
-// }
-
-// export default Mov;
 
 import React from 'react';
-
+import { RiJavascriptFill } from "react-icons/ri"
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai"
+import { SiCss3, SiExpress } from "react-icons/si"
+import { BiLogoFirebase, BiLogoMongodb, BiLogoNodejs } from "react-icons/bi"
 const HighlightsData = [
   {
-    name: 'GitHub Campus Expert',
+    name: 'Javascript',
+    icon: RiJavascriptFill,
     link: 'https://education.github.com/experts',
     bgColor: '#fff',
   },
   {
-    name: 'Postman Students Expert',
+    name: 'Css',
+    icon: SiCss3,
     link: 'https://www.postman.com/student-program/student-expert/',
     bgColor: '#fff',
   },
   {
-    name: 'Google Kickstart',
+    name: 'Html',
+    icon: AiFillHtml5,
     link: 'https://codingcompetitions.withgoogle.com/',
     bgColor: '#fff',
   },
   {
-    name: 'Amazon WoW',
+    name: 'Firebase',
+    icon: BiLogoFirebase,
     link: 'https://amazonwowindia.splashthat.com/',
     bgColor: '#fff',
   },
   {
-    name: 'JP Morgan - Code for Good',
+    name: 'MongoDB',
+    icon: BiLogoMongodb,
     link: 'https://careers.jpmorgan.com/in/en/students',
     bgColor: '#fff',
   },
   {
-    name: 'Microsoft Engage',
+    name: 'NodeJs',
+    icon: BiLogoNodejs,
     link: 'https://acehacker.com/microsoft/engage2022/',
     bgColor: '#fff',
   },
   {
-    name: 'GFG Jobathons',
+    name: 'ExpressJs',
+    icon: SiExpress,
+    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    bgColor: '#fff',
+  },
+  {
+    name: 'ChartJs',
+    icon: AiFillGithub,
+    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    bgColor: '#fff',
+  },
+  {
+    name: 'ChatGPT',
+    icon: BiLogoFirebase,
+    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    bgColor: '#fff',
+  },
+  {
+    name: 'Github',
+    icon: AiFillGithub,
+    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    bgColor: '#fff',
+  },
+  {
+    name: 'oAuth',
+    icon: BiLogoFirebase,
+    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    bgColor: '#fff',
+  },
+  {
+    name: 'Clerk',
+    icon: BiLogoFirebase,
     link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
     bgColor: '#fff',
   },
@@ -61,7 +92,26 @@ const Highlights = () => {
             animation: marquee 30s linear 0s infinite;
             margin: 30px 0;
           }
-
+          .card1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            height: 80px;
+            margin: 0 10px; /* Add margin to create a gap between cards */
+            border-radius: 12px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            padding: 0 18px;
+            transform: translateY(0);
+            transition: all 0.2s ease-in-out;
+          }
+          .card1:hover {
+            scale: 1.1;
+            transform: translateY(-10px);
+            border: 1px solid #FF00FF; /* Add your desired border color on hover */
+          }
           .marquee:hover {
             animation-play-state: paused;
           }
@@ -80,18 +130,22 @@ const Highlights = () => {
         <div className="marquee">
           {HighlightsData.map((highlight, i) => (
             <a
-              className="flex justify-around items-center w-auto h-20 bg-white rounded-md shadow-md px-4 transform transition-all hover:scale-110 hover:-translate-y-2"
+              className="card1 flex justify-around items-center w-auto h-20 bg-white rounded-md shadow-md px-4 transition-all hover:scale-110 hover:-translate-y-2  border-violet-600 transform hover:scale-105 hover:border-pink-500"
+              
               href={highlight.link}
               target="_blank"
               rel="noreferrer noopener"
               key={i}
             >
-              {/* <img className="w-10 object-contain" src={highlight.image} alt={highlight.name} /> */}
+              <div>
+                {highlight.icon && <highlight.icon className="w-10 h-10 rounded-full text-grey-500  text-violet-400" />}
+              </div>   
               <h2 className="text-lg text-black">{highlight.name}</h2>
             </a>
           ))}
         </div>
       </div>
+      
     </>
   );
 };

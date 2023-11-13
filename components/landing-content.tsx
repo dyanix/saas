@@ -2,8 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FaReact } from "react-icons/fa";
-import {TbBrandTypescript ,TbBrandTailwind } from "react-icons/tb"
-import {SiNextdotjs} from "react-icons/si"
+import { TbBrandTypescript, TbBrandTailwind } from "react-icons/tb"
+import { SiNextdotjs } from "react-icons/si"
 const testimonials = [
   {
     name: "React",
@@ -33,14 +33,15 @@ const testimonials = [
 export const LandingContent = () => {
   return (
     <div className="px-10 pb-20">
-      <h2 className="text-center text-4xl text-white font-extrabold mb-10">Built on a foundation of fast,
-        production-grade tool</h2>
+      <h2 className="text-center text-5xl text-white font-extrabold mb-10">Built on a foundation of fast,
+        production</h2>
+        <h2 className="text-center text-5xl text-white font-extrabold mb-10">grade tool</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center sm:mx-auto ">
         {testimonials.map((item) => (
 
           <Card
             key={item.description}
-            className=" card  text-gray-300 hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative bg-[#192339] border-violet-600 text-white transition-transform transform hover:scale-105 hover:border-pink-500"
+            className=" card  text-gray-300 hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 m-4 rounded-lg overflow-hidden relative bg-[#192339] border-violet-600 transform hover:scale-105 hover:border-pink-500"
           >
 
             <CardHeader>
@@ -48,11 +49,11 @@ export const LandingContent = () => {
                 {/* <div >
                   <FaReact className="text-blue-500 w-10 h-10 rounded-full mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-blue-900 transition-all" />
                 </div> */}
-                
+
                 <div>
-                <div>
-                  {item.Icon && <item.Icon className="text-blue-500 w-10 h-10 rounded-full mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-blue-900 transition-all" />}
-                </div>
+                  <div>
+                    {item.Icon && <item.Icon className="text-blue-500 w-10 h-10 rounded-full mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-blue-900 transition-all" />}
+                  </div>
                   <p className="text-lg">{item.name}</p>
                   <p className="text-zinc-400 text-sm"></p>
                 </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MessageSquare, CodeIcon } from "lucide-react";
+import { ArrowRight, MessageSquare, CodeIcon ,FolderKanban  } from "lucide-react";
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation";
 
@@ -21,6 +21,14 @@ const tools = [
     href: "/codegeneration",
     bgColor: "bg-emerald-500/10",
     color: "text-emerald-500"
+
+  },
+  {
+    label: "Projects",
+    icon: FolderKanban ,
+    href: "/projects",
+    bgColor: "bg-blue-500/10",
+    color: "text-blue-500"
 
   }
 

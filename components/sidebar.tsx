@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Montserrat } from "next/font/google"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, MessageSquare, CodeIcon, Settings } from "lucide-react";
+import { LayoutDashboard, MessageSquare, CodeIcon, FolderKanban  } from "lucide-react";
 import { usePathname } from "next/navigation";
 const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
 
@@ -27,10 +27,10 @@ const routes = [
         color: "text-pink-500"
     },
     {
-        label: "Settings",
-        icon: Settings,
-        href: "/settings",
-        color: "text-white-500"
+        label: "Projects",
+        icon: FolderKanban,
+        href: "/projects",
+        color: "text-blue-500"
     }
 ]
 const Sidebar = () => {
