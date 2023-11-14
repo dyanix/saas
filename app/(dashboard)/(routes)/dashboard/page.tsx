@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MessageSquare, CodeIcon ,FolderKanban  } from "lucide-react";
+import { ArrowRight, MessageSquare, CodeIcon, FolderKanban } from "lucide-react";
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation";
 
@@ -25,7 +25,7 @@ const tools = [
   },
   {
     label: "Projects",
-    icon: FolderKanban ,
+    icon: FolderKanban,
     href: "/projects",
     bgColor: "bg-blue-500/10",
     color: "text-blue-500"
@@ -35,7 +35,7 @@ const tools = [
 ]
 
 const DashboardPage = () => {
-  const router =useRouter();
+  const router = useRouter();
   return (
     <div>
       <div className="mb-8 space-y-4">
@@ -46,12 +46,12 @@ const DashboardPage = () => {
         <p className="text-muted-foreground font-light text-sm md:text-ld text-center ">Explore your prompt here !!</p>
 
       </div>
-      <div className="px-4 md:px-20 lg:px-32 space-y-4">
+      <div className="px-4 md:px-20 lg:px-32 space-y-4 ">
         {tools.map((tool) => (
           <Card
-          onClick={()=>router.push(tool.href)}
+            onClick={() => router.push(tool.href)}
             key={tool.href}
-            className="p-4 border-black/5 flex items-center justify-between hover:shadow-md transition cursor-pointer"
+            className="p-4  border-solid flex items-center justify-between hover:shadow-md transition cursor-pointer  border-violet-600  hover:border-pink-500"
           >
             <div className="flex items-center gap-x-4 ">
               <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>

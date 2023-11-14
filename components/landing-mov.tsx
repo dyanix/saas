@@ -4,80 +4,82 @@ import { RiJavascriptFill } from "react-icons/ri"
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai"
 import { SiCss3, SiExpress } from "react-icons/si"
 import { BiLogoFirebase, BiLogoMongodb, BiLogoNodejs } from "react-icons/bi"
+
 const HighlightsData = [
   {
     name: 'Javascript',
     icon: RiJavascriptFill,
-    link: 'https://education.github.com/experts',
+    link: 'https://www.javascript.com/',
     bgColor: '#fff',
   },
   {
     name: 'Css',
     icon: SiCss3,
-    link: 'https://www.postman.com/student-program/student-expert/',
+    link: '',
     bgColor: '#fff',
   },
   {
     name: 'Html',
     icon: AiFillHtml5,
-    link: 'https://codingcompetitions.withgoogle.com/',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     bgColor: '#fff',
   },
   {
     name: 'Firebase',
     icon: BiLogoFirebase,
-    link: 'https://amazonwowindia.splashthat.com/',
+    link: 'https://firebase.google.com/',
     bgColor: '#fff',
   },
   {
     name: 'MongoDB',
     icon: BiLogoMongodb,
-    link: 'https://careers.jpmorgan.com/in/en/students',
+    link: 'https://www.mongodb.com/',
     bgColor: '#fff',
   },
   {
     name: 'NodeJs',
     icon: BiLogoNodejs,
-    link: 'https://acehacker.com/microsoft/engage2022/',
+    link: 'https://nodejs.org/en',
     bgColor: '#fff',
   },
   {
     name: 'ExpressJs',
     icon: SiExpress,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://expressjs.com/',
     bgColor: '#fff',
   },
   {
     name: 'ChartJs',
     icon: AiFillGithub,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://www.chartjs.org/',
     bgColor: '#fff',
   },
   {
     name: 'ChatGPT',
     icon: BiLogoFirebase,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://chat.openai.com/',
     bgColor: '#fff',
   },
   {
     name: 'Github',
     icon: AiFillGithub,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://github.com/',
     bgColor: '#fff',
   },
   {
     name: 'oAuth',
     icon: BiLogoFirebase,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://auth0.com/',
     bgColor: '#fff',
   },
   {
     name: 'Clerk',
     icon: BiLogoFirebase,
-    link: 'https://practice.geeksforgeeks.org/contest/job-a-thon-17-hiring-challenge',
+    link: 'https://clerk.com/',
     bgColor: '#fff',
   },
 ];
+const duplicatedHighlights = [...HighlightsData, ...HighlightsData]; 
 
 const Highlights = () => {
   return (
@@ -124,14 +126,15 @@ const Highlights = () => {
               transform: translateX(-100%);
             }
           }
+
+         
         `}
       </style>
-      <div className="overflow-hidden">
+      <div className=" overflow-hidden mb-12">
         <div className="marquee">
-          {HighlightsData.map((highlight, i) => (
+          {duplicatedHighlights.map((highlight, i) => (
             <a
-              className="card1 flex justify-around items-center w-auto h-20 bg-white rounded-md shadow-md px-4 transition-all hover:scale-110 hover:-translate-y-2  border-violet-600 transform hover:scale-105 hover:border-pink-500"
-              
+              className="card1 flex justify-around items-center w-auto h-20 bg-white rounded-md shadow-md px-4 transition-all hover:scale-110 hover:-translate-y-2  border-violet-600 transform hover:border-pink-500"
               href={highlight.link}
               target="_blank"
               rel="noreferrer noopener"
@@ -139,13 +142,12 @@ const Highlights = () => {
             >
               <div>
                 {highlight.icon && <highlight.icon className="w-10 h-10 rounded-full text-grey-500  text-violet-400" />}
-              </div>   
+              </div>
               <h2 className="text-lg text-black">{highlight.name}</h2>
             </a>
           ))}
         </div>
       </div>
-      
     </>
   );
 };

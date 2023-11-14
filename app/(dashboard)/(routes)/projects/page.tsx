@@ -2,89 +2,166 @@
 
 import { Heading } from "@/components/heading";
 import { FolderKanban } from "lucide-react";
-
+import { AiFillGithub } from "react-icons/ai"
+import { GiAbstract047 } from "react-icons/gi"
+import Link from "next/link"
 
 const projects = [
-    {
-        name: "Expense Tracker",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Github Issue Tracker",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "CarbonFootprint Calculator",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Vodeo",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Chat Analyzer",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Chat Analyzer",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Chat Analyzer",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Chat Analyzer",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
-    {
-        name: "Chat Analyzer",
-        githubIcon: "",
-        githubLink: "",
-        liveIcon: "",
-        liveLink: ""
-    },
+  {
+    poster: "/1.jpeg",
+    name: "Expensify",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/3.jpeg",
+    name: "Github Issue Tracker",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/2.jpeg",
+    name: "CarbonFootprint Calculator",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/4.jpeg",
+    name: "Vodeo",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/7.jpeg",
+    name: "Chat Analyzer",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/6.jpeg",
+    name: "Exo",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/13.jpeg",
+    name: "Api",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/5.jpeg",
+    name: "Chatify",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/14.jpeg",
+    name: "Appraisal System",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/8.jpg",
+    name: "Sine Graph",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/10.jpeg",
+    name: "Auth Dashboard",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/16.jpeg",
+    name: "Terminal Portfolio",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/9.jpeg",
+    name: "Crud App",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/11.jpeg",
+    name: "To-Do App",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/17.jpeg",
+    name: "Text Summarizer",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/15.jpeg",
+    name: "Insta",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
+  {
+    poster: "/12.jpeg",
+    name: "User Management",
+    githubIcon: AiFillGithub,
+    githubLink: "",
+    liveIcon: GiAbstract047,
+    liveLink: ""
+  },
 
 
 ]
 
 const Projects = () => {
-    return (
+  return (
 
-        <>
-            <style>{
-                `
+    <>
+      <style>{
+        `
             .card2 {
-                width: 230px;
+                // width: 230px;
                 border-radius: 20px;
                 background: #1b233d;
                 padding: 5px;
                 overflow: hidden;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+                // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+                // box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+
                 transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
               }
               
@@ -97,26 +174,40 @@ const Projects = () => {
                 border-radius: 15px;
                 display: flex;
                 flex-direction: column;
-                background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
                 position: relative;
               }
               
+              .card2 .top-section img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+             
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+
+              }
+              
+             
+              
+              
               .card2 .top-section .border {
                 border-bottom-right-radius: 15px;
-                height: 30px;
-                width: 130px;
+                height: 0px;
+                width: 0px;
                 background: white;
                 background: #1b233d;
                 position: relative;
-                transform: skew(-40deg);
+                // transform: skew(-80deg);
                 box-shadow: -10px -10px 0 0 #1b233d;
               }
               
               .card2 .top-section .border::before {
                 content: "";
                 position: absolute;
-                width: 15px;
-                height: 15px;
+                width: 0px;
+                height: 0px;
                 top: -1px;
                 right: -15px;
                 background: rgba(255, 255, 255, 0);
@@ -130,8 +221,8 @@ const Projects = () => {
                 top: 30px;
                 left: 0;
                 background: rgba(255, 255, 255, 0);
-                height: 15px;
-                width: 15px;
+                height: 0px;
+                width: 0px;
                 border-top-left-radius: 15px;
                 box-shadow: -5px -5px 0 2px #1b233d;
               }
@@ -143,32 +234,6 @@ const Projects = () => {
                 height: 30px;
                 display: flex;
                 justify-content: space-between;
-              }
-              
-              .card2 .top-section .icons .logo {
-                height: 100%;
-                aspect-ratio: 1;
-                padding: 7px 0 7px 15px;
-              }
-              
-              .card2 .top-section .icons .logo .top-section {
-                height: 100%;
-              }
-              
-              .card2 .top-section .icons .social-media {
-                height: 100%;
-                padding: 8px 15px;
-                display: flex;
-                gap: 7px;
-              }
-              
-              .card2 .top-section .icons .social-media .svg {
-                height: 100%;
-                fill: #1b233d;
-              }
-              
-              .card2 .top-section .icons .social-media .svg:hover {
-                fill: white;
               }
               
               .card2 .bottom-section {
@@ -211,49 +276,69 @@ const Projects = () => {
                 border-left: 1px solid rgba(255, 255, 255, 0.126);
                 border-right: 1px solid rgba(255, 255, 255, 0.126);
               }
+              .card2.first {
+                margin-top: 16px; /* Adjust the margin as needed */
+              }
+              
+              
             `
-            }
+      }
 
-            </style>
-            <Heading
-                title="Projects"
-                description="Most advanced Projects ever made !"
-                icon={FolderKanban}
-                iconColor='text-emerald-500'
-                bgColor="bg-emerald-500/10"
+      </style>
+      <Heading
+        title="Projects"
+        description="Most advanced Projects ever made !"
+        icon={FolderKanban}
+        iconColor='text-emerald-500'
+        bgColor="bg-emerald-500/10"
 
 
-            />
+      />
 
-            <div className=" px-4 md:px-20 lg:px-32 space-y-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center sm:mx-auto ">
-                {projects.map((projects) => (
-                    <div className="card2">
-                        <div className="top-section">
-                            <div className="border"></div>
-                        </div>
-                        <div className="bottom-section">
-                            <span className="title">{projects.name}</span>
-                            <div className="row row1">
-                                <div className="item">
-                                    <span className="big-text">2626</span>
-                                    <span className="regular-text">Github</span>
-                                </div>
-                                <div className="item">
-                                    <span className="big-text">100%</span>
-                                    <span className="regular-text">Free for use</span>
-                                </div>
-                                <div className="item">
-                                    <span className="big-text">38,631</span>
-                                    <span className="regular-text">Live</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+      <div className="px-4 md:px-10 lg:px-16 xl:px-32 space-y-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 mx-auto">
+        {projects.map((projects, index) => (
+          <div key={index} className={`card2 ${index === 0 ? 'first' : ''} `}>
+            {/* <div className="top-section">
+              <div className="border"></div>
+            </div> */}
+            <div className="top-section">
+              <img src={projects.poster} alt={`Poster for ${projects.name}`} className="w-full h-auto" />
+              {/* <div className="border"></div> */}
             </div>
+            <div className="bottom-section">
+              <span className="title">{projects.name}</span>
+              <div className="row row1">
+                <div className="item flex flex-col items-center">
+                  <Link href="https://github.com/dyanix">
+                    <div>
+                      {projects.githubIcon && (
+                        <projects.githubIcon className="w-5 h-5 rounded-full text-grey-500 text-violet-400" />
+                      )}
+                    </div>
+                  </Link>
+                  <span className="regular-text">Github</span>
+                </div>
 
-        </>
-    )
+                <div className="item">
+                  <span className="big-text">100%</span>
+                  <span className="regular-text">Free for use</span>
+                </div>
+                <div className="item flex flex-col items-center">
+                  <div>
+                    {projects.liveIcon && (
+                      <projects.liveIcon className="w-5 h-5 rounded-full text-grey-500 text-violet-400" />
+                    )}
+                  </div>
+                  <span className="regular-text">Live</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </>
+  )
 }
 
 export default Projects;
