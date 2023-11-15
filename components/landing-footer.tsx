@@ -190,6 +190,24 @@ const Footer = () => {
                 right: 1.5rem;
                 text-align: right;
               }
+              @media only screen and (max-width: 600px) {
+               
+        
+               
+        
+                .text-container {
+                  top: -350px;
+                  right: 0;
+                  text-align: center;
+                }
+        
+                .text-right {
+                  text-align: center;
+                }
+        
+                .text-container h1 {
+                  font-size: 2.5rem;
+                }
             `
         }
       </style>
