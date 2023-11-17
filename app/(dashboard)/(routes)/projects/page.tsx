@@ -5,7 +5,9 @@ import { FolderKanban } from "lucide-react";
 import { AiFillGithub } from "react-icons/ai"
 import { GiAbstract047 } from "react-icons/gi"
 import Link from "next/link"
-
+import { useState } from 'react';
+import { FcInfo } from "react-icons/fc";
+import { RxCrossCircled } from "react-icons/rx";
 const projects = [
   {
     poster: "/1.jpeg",
@@ -13,7 +15,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/3.jpeg",
@@ -21,7 +24,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/2.jpeg",
@@ -29,7 +33,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/4.jpeg",
@@ -37,7 +42,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/7.jpeg",
@@ -45,7 +51,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/6.jpeg",
@@ -53,7 +60,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/13.jpeg",
@@ -61,7 +69,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/5.jpeg",
@@ -69,7 +78,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/14.jpeg",
@@ -77,7 +87,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/8.jpg",
@@ -85,7 +96,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/10.jpeg",
@@ -93,7 +105,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/16.jpeg",
@@ -101,7 +114,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/9.jpeg",
@@ -109,7 +123,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/11.jpeg",
@@ -117,7 +132,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/17.jpeg",
@@ -125,7 +141,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/15.jpeg",
@@ -133,7 +150,8 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
   {
     poster: "/12.jpeg",
@@ -141,13 +159,23 @@ const projects = [
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
-    liveLink: ""
+    liveLink: "",
+    description: "",
   },
 
 
 ]
 
 const Projects = () => {
+  const [modalStates, setModalStates] = useState(Array(projects.length).fill(false));
+
+  const toggleModal = (index: number) => {
+    const newModalStates = [...modalStates];
+    newModalStates[index] = !newModalStates[index];
+    setModalStates(newModalStates);
+  };
+
+
   return (
 
     <>
@@ -296,13 +324,23 @@ const Projects = () => {
       />
 
       <div className="px-4 md:px-10 lg:px-16 xl:px-32 space-y-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 mx-auto">
+
         {projects.map((projects, index) => (
           <div key={index} className={`card2 ${index === 0 ? 'first' : ''} `}>
+
             {/* <div className="top-section">
               <div className="border"></div>
             </div> */}
             <div className="top-section">
               <img src={projects.poster} alt={`Poster for ${projects.name}`} className="w-full h-auto" />
+              {/* Icon for description */}
+              <div
+                className="absolute top-2 right-2 cursor-pointer"
+                onClick={() => toggleModal(index)}
+              >
+                {/* You can replace the following with your own icon */}
+                <FcInfo className="w-6 h-6 text-white" />
+              </div>
               {/* <div className="border"></div> */}
             </div>
             <div className="bottom-section">
@@ -333,8 +371,32 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+            {/* Modal for project description */}
+            {modalStates[index] && (
+              <div className="  rounded-lg bg-black bg-opacity-50 flex items-center justify-center z-50">
+                <div className="bg-black p-8 rounded-lg relative">
+                  {/* Close icon at the top right */}
+                  <div
+                    className="absolute top-3 right-3 cursor-pointer text-white"
+                    onClick={() => toggleModal(index)}
+                  >
+                    {/* Replace the following with your own close icon */}
+                    <RxCrossCircled className="w-6 h-6" />
+                  </div>
+
+                  {/* Project description content */}
+                  <p>{projects.name}</p>
+                  <p className="text-white">{projects.description}</p>
+
+                  {/* Close button */}
+
+                </div>
+              </div>
+            )}
+
           </div>
         ))}
+
       </div>
 
     </>
