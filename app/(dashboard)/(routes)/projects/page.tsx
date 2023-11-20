@@ -16,7 +16,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
+    description: "I developed an expense tracker application using Material UI for the UI design, React JS for the  frontend, Speechly API for voice recognition, and ChartJS for data visualisation. The application  allows users to track their expenses and income by adding transactions through voice  commands, manual input, or file upload. The transactions are then displayed in a user-friendly  interface, with the option to view them in the form of various charts and graphs. I implemented  features such as real-time updates and offline support, and utilised Material UI's responsive layout  and design principles to create a visually appealing and functional application. Overall, the project  was a great opportunity to learn and apply modern web development technologies and  practices.",
   },
   {
     poster: "/3.jpeg",
@@ -25,7 +25,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
+    description: "GitHub issue tracker made with React and Octokit API is a web application that allows users to  track and manage issues on their GitHub repositories. Octokit API is used to access GitHub's API  and fetch data related to issues, such as title, description, labels, and status. React is used as the  front-end framework to create a user-friendly interface that enables users to create, view, and  manage issues easily.   Additionally, Chart.js is integrated into the application to provide visual representations of issue  data, such as the number of open issues, closed issues, and issues by label. This allows users to  quickly get a high-level overview of their repository's issue status and identify trends and patterns. Overall, this GitHub issue tracker is a powerful tool for managing issues on GitHub repositories,  providing a comprehensive and intuitive interface that streamlines issue tracking and  management.   ",
   },
   {
     poster: "/2.jpeg",
@@ -34,7 +34,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Carbon footprint is a very important means to understand the impact of a person's behaviour on  Global Warming. That's why someone who effectively wants to contribute to stop global warming,  even on an individual scale, needs to measure and keep track of their personal carbon footprint. Use our Carbon Footprint Calculator and offset your emissions today!! It is simple frontend website which calculates and for awareness",
   },
   {
     poster: "/4.jpeg",
@@ -43,7 +43,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "I developed a video calling website using WebRTC API for real-time video and audio  communication, ReactJS for the frontend, and Material UI for the UI design. The website allows  users to make one-on-one or group video calls with the click of a button, and features a  responsive and intuitive interface designed with Material UI. I utilised ReactJS's functional  components and hooks to implement features such as call history and call notifications, and  integrated WebRTC's signalling server to establish secure peer-to-peer connections. Overall, the  project was a great opportunity to learn and apply modern web development technologies and  practices",
   },
   {
     poster: "/7.jpeg",
@@ -52,7 +52,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: " It is a web application built using Streamlit and Python that can be used to analyze  WhatsApp chat conversations. The app allows users to upload their WhatsApp chat text file and  provides various insights and statistics such as the number of messages sent by each participant,  the most frequently used words and emojis, and the busiest time of day for the conversation. The  app also generates word clouds and histograms to visualize the most commonly used words and  emojis in the chat. Overall, makes it easy for users to gain insights into their  WhatsApp conversations and understand the patterns and trends in their chat history. ",
   },
   {
     poster: "/6.jpeg",
@@ -61,7 +61,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/13.jpeg",
@@ -70,7 +70,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "This Application Fetches the data from API and displays it.(React app)     ",
   },
   {
     poster: "/5.jpeg",
@@ -79,7 +79,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "I developed a chat application using React JS for the frontend,  ChatEngine API for real-time messaging functionality, and Firebase for the authentication backend  and database. The application allows users to communicate with each other in real-time, with the  ability to send messages, reactions, and files. I utilised React's functional components and hooks  to create a responsive and intuitive interface, and implemented features such as message  pagination and offline support. Overall, the project was a great opportunity to learn and apply  modern web development technologies and practices.",
   },
   {
     poster: "/14.jpeg",
@@ -88,7 +88,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/8.jpg",
@@ -97,7 +97,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/10.jpeg",
@@ -106,7 +106,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/16.jpeg",
@@ -115,16 +115,16 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/9.jpeg",
-    name: "Crud App",
+    name: "Student Managment System",
     githubIcon: AiFillGithub,
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Admin panel which add students and manage students    Demo:    Email:admin@gmail.com    Password:123456   ",
   },
   {
     poster: "/11.jpeg",
@@ -133,7 +133,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/17.jpeg",
@@ -142,7 +142,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/15.jpeg",
@@ -151,7 +151,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
   {
     poster: "/12.jpeg",
@@ -160,7 +160,7 @@ const projects = [
     githubLink: "",
     liveIcon: GiAbstract047,
     liveLink: "",
-    description: "",
+    description: "Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so y",
   },
 
 
@@ -305,7 +305,8 @@ const Projects = () => {
                 border-right: 1px solid rgba(255, 255, 255, 0.126);
               }
               .card2.first {
-                margin-top: 16px; /* Adjust the margin as needed */
+                margin-top: 16px;
+              
               }
               
               
@@ -385,7 +386,7 @@ const Projects = () => {
                   </div>
 
                   {/* Project description content */}
-                  <p>{projects.name}</p>
+                  <p className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-transparent bg-clip-text transition-all animate-gradientFlow">{projects.name}</p>
                   <p className="text-white">{projects.description}</p>
 
                   {/* Close button */}
