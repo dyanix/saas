@@ -130,6 +130,9 @@ const Highlights = () => {
          
         `}
       </style>
+      <div className="text-center text-sm md:text-xl font-light text-zinc-400">
+          Other Tools And Technologies
+        </div>
       <div className=" overflow-hidden mb-12">
         <div className="marquee">
           {duplicatedHighlights.map((highlight, i) => (

@@ -7,16 +7,15 @@ import { useAuth } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
+import styles from './LandingNavbar.module.css';
 const font = Montserrat({ weight: '600', subsets: ['latin'] });
-
 
 
 export const LandingNavbar = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <nav className="p-4 bg-opacity-50 flex items-center justify-between">
+    <nav className={` p-4 bg-opacity-50 flex items-center justify-between ${styles.glassmorphism}`}>
       <Link href="/" className="flex items-center">
         <div className="relative h-8 w-8 mr-4">
           <Image fill alt="Logo" src="/olio.png" />
