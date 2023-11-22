@@ -137,7 +137,7 @@ const Highlights = () => {
         <div className="marquee">
           {duplicatedHighlights.map((highlight, i) => (
             <a
-              className="card1 flex justify-around items-center w-auto h-20 bg-white rounded-md shadow-md px-4 transition-all hover:scale-110 hover:-translate-y-2  border-violet-600 transform hover:border-pink-500"
+              className="card1 flex justify-around items-center w-auto h-20 bg-black rounded-md shadow-md px-4 transition-all hover:scale-110 hover:-translate-y-2  border-violet-600 transform hover:border-pink-500"
               href={highlight.link}
               target="_blank"
               rel="noreferrer noopener"
@@ -146,7 +146,7 @@ const Highlights = () => {
               <div>
                 {highlight.icon && <highlight.icon className="w-10 h-10 rounded-full text-grey-500  text-violet-400" />}
               </div>
-              <h2 className="text-lg text-black">{highlight.name}</h2>
+              <h2 className="text-lg text-white">{highlight.name}</h2>
             </a>
           ))}
         </div>
