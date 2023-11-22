@@ -130,7 +130,7 @@ const Highlights = () => {
          
         `}
       </style>
-      <div className="text-center text-sm md:text-xl font-light text-zinc-400">
+      <div className="text-center   text-xl md:text-xl  font-bold text-zinc-400">
           Other Tools And Technologies
         </div>
       <div className=" overflow-hidden mb-12">

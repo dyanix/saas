@@ -34,8 +34,8 @@ export const LandingContent = () => {
   return (
     <div className="px-10 pb-20">
       <h2 className="text-center text-5xl text-white font-extrabold mb-10">Built on a foundation of fast,
-        production</h2>
-        <h2 className="text-center text-5xl text-white font-extrabold mb-10">grade tool</h2>
+        production <span className="text-center text-5xl text-white font-extrabold mb-10">grade tool</span> </h2>
+        {/* <h2 className="text-center text-5xl text-white font-extrabold mb-10">grade tool</h2> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center sm:mx-auto ">
         {testimonials.map((item) => (
 
